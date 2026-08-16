@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Clicker
+    </title>
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="shortcut icon" href="images/cursor3.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div id="background"></div>
+      <main class="main" id="main">
+        <div class="Click__counter">
+          <p class="Click__text"><span id = "counter">0</span> </p>
+        </div>
+        <div class="Main__button">
+          <button class="button", id = "button" type="button" name="button"><img src="images/cursor.png" id="Click__button-image"></button>
+        </div>
+        <ul class="popup__button-list">
+          <li class="popup__button">
+            <button type="button" name="button" class="stats__button" id="stats__button"><img src="images/stats.svg" class="popup__image"></button>
+          </li>
+          <li class="popup__button">
+            <button type="button" name="button" class="about__button" id="about__button"><img src="images/about.svg" class="popup__image"></button>
+          </li>
+          <li class="popup__button">
+            <button type="button" name="button" class="achievment__button" id="achievment__button"><img src="images/achievment.svg" class="popup__image"></button>
+          </li>
+        </ul>
+        <div class="ending__button-2" id="ending__button-2">
+          <button type="button" name="button" class="ending__button" id="ending__button">Конец?</button>
+        </div>
+        <div class="achievment__notification" id="achievment__notification">
+          <div class="achievment__notification-body">
+            <div class="achievment__notification-content">
+              <div class="achievment__notification-image-container"><img src="" class="achievment__notification-image" id="achievment__notification-image"></div>
+              <div class="achievment__notification-text">
+                <div class="achievment__notification-header">Достижение получено:</div>
+                <div class="achievment__notification-desc" id="achievment__notification-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <aside class="shop">
+        <div class="shop__container">
+          <div class="shop__header">
+            Shop!
+          </div>
+          <div class="shop__goods">
+            <ul class="shop__goods-list">
+              <li class="shop__good">
+                <img src="images/cursor2.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                  Доп. курсор
+                  </div>
+                  <div class="shop__good-desc">
+                    Почему бы и нет?
+                  </div>
+                </div>
+                <div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton1">100</button>
+                </div>
+              </li>
+              <li class="shop__good">
+                <img src="images/toycat.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Плюшевый котик
+                  </div>
+                  <div class="shop__good-desc">
+                    Мило сидит и молчит, разве это не прекрасно?
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton2">500</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/laptop.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Ноутбук
+                  </div>
+                  <div class="shop__good-desc">
+                    Создан специально для помощи в нажатиях
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton3">3K</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/guitar.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Гитара
+                  </div>
+                  <div class="shop__good-desc">
+                    Больше сила пальцев - больше сила кликов
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton4">10K</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/cat.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Котик
+                  </div>
+                  <div class="shop__good-desc">
+                    Зачем плюшевый, когда есть настоящий?
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton5">50K</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/dog.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                   Милый песик
+                  </div>
+                  <div class="shop__good-desc">
+                    Иногда дает доброту, иногда забирает тапки, но все равно такой милый
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton6">150K</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/brain.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Клетки мозга
+                  </div>
+                  <div class="shop__good-desc">
+                    При создании сайта не использовались
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton7">500K</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/motorcycle.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Мотоцикл Мечты
+                  </div>
+                  <div class="shop__good-desc">
+                    Он у тебя обязательно появится
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton8">3M</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/nobrain.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Отказ от мозга
+                  </div>
+                  <div class="shop__good-desc">
+                    Зачем думать, если можно просто кликать?
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton9">10M</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/kindness.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Доброта
+                  </div>
+                  <div class="shop__good-desc">
+                    Хотя... Зачем ее покупать, она у тебя и так есть
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton10">25M</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/present.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Подарок
+                  </div>
+                  <div class="shop__good-desc">
+                    Надеюсь сегодня они были у тебя прекрасные
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton11">75M</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/headphones.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Наушники
+                  </div>
+                  <div class="shop__good-desc">
+                    Из них доносится твоя любимая музыка
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton12">150M</button>
+              </li>
+              <li class="shop__good">
+                <img src="images/crown.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Королева Кликов
+                  </div>
+                  <div class="shop__good-desc">
+                    Теперь этот титул официально твой
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton13">400M</button>
+              </li>
+              <li class="shop__good" id="last-shop-good">
+                <img src="images/cake.png" alt="img" class="shop__good-image">
+                <div class= "shop__good-text">
+                  <div class="shop__good-header">
+                    Торт
+                  </div>
+                  <div class="shop__good-desc">
+                    Ты его заслужила!
+                  </div>
+                </div>
+                  <button type="button" name="button" class="shop__good-button" id="buyButton14">1B</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <div class="popups">
+        <div class="stats__popup" id="stats__popup">
+          <div class="stats__popup-background"></div>
+          <div class="stats__popup-body">
+            <div class="stats__popup-container">
+              <h1 class="stats__popup-header">Статистика</h1>
+              <div class="stats__popup-text">
+                <p class="stats__popup-paragraph">Всего монет: <span id="total__coins">0</span></p>
+                <p class="stats__popup-paragraph">Всего кликов: <span id="total__clicks">0</span></p>
+                <p class="stats__popup-paragraph">Монет за клик: <span id="click__value">1</span></p>
+                <p class="stats__popup-paragraph">Всего улучшений: <span id="total__upgrades">0</span></p>
+                <p class="stats__popup-paragraph">Время в игре: <span id="time-in-game"></span></p>
+              </div>
+            </div>
+            <div class="stats__popup-close">
+              <button type="button" name="button" class="stats__popup-close-button" id="stats__popup-close-button">x</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__popup" id="about__popup">
+          <div class="about__popup-background"></div>
+          <div class="about__popup-body">
+            <div class="about__popup-container">
+              <h1 class="about__popup-header">Об игре</h1>
+              <div class="about__popup-text">
+                <p class="about__popup-paragraph">Привет!</p>
+                <p class="about__popup-paragraph">Это игра-кликер, где главная задача... кликать, и покупать улучшения, чтобы кликать эффективнее</p>
+                <p class="about__popup-paragraph">Главная цель: достичь 1 миллиарда монет и купить последнее улучшение, тем самым пройти игру</p>
+                <p class="about__popup-paragraph">НО! В игре так же есть достижения, которые могут предоставить небольшое испытание, сможешь ли ты с ними справиться?</p>
+                <p class="about__popup-paragraph">Игра создана специально для тебя в качестве подарка на день рождения, на создание данного презента ушло около 2 месяцев и ... строк кода.</p>
+                <p class="about__popup-paragraph">Желаю удачи.</p>
+                <p class="about__popup-paragraph about__popup-paragraph-author-2">Игра создана H1Sh00txD (или 46 & 2, как удобнее)</p>
+                <p class="about__popup-paragraph about__popup-paragraph-author">Отдельная благодарность Skelt, который нарисовал все иконки</p>
+                <div class="git__button-container">
+                  <a href="https://youtube.com" target="_blank" class="git__button"><img src="images/git.png" class="git__button-image"></a>
+                </div>
+              </div>
+            </div>
+            <div class="about__popup-close">
+              <button type="button" name="button" class="about__popup-close-button" id="about__popup-close-button">x</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievment__popup" id="achievment__popup">
+          <div class="achievment__popup-background"></div>
+          <div class="achievment__popup-body">
+            <div class="achievment__popup-container">
+              <h1 class="achievment__popup-header">Достижения</h1>
+              <div class="achievments">
+                <div class="achievment">
+                  <div class="achievment__container">
+                    <div class="achievment__image"><img src="images/cursor3.png" class="achievment__image-image"></div>
+                    <div class="achievment__text">
+                      <div class="achievment__header">Первые шаги</div>
+                      <div class="achievment__desc">Достигните 100 кликов</div>
+                    </div>
+                    <div class="achievment__mark"><img src="images/empty.png" class="achievment__mark-image" id="achievment__mark-1"></div>
+                  </div>
+                </div>
+                <div class="achievment">
+                  <div class="achievment__container">
+                    <div class="achievment__image"><img src="images/cursor3.png" class="achievment__image-image"></div>
+                    <div class="achievment__text">
+                      <div class="achievment__header">Начинающий Кликер</div>
+                      <div class="achievment__desc">Достигните 1000 кликов</div>
+                    </div>
+                    <div class="achievment__mark"><img src="images/empty.png" class="achievment__mark-image" id="achievment__mark-2"></div>
+                  </div>
+                </div>
+                <div class="achievment">
+                  <div class="achievment__container">
+                    <div class="achievment__image"><img src="images/cursor3.png" class="achievment__image-image"></div>
+                    <div class="achievment__text">
+                      <div class="achievment__header">Заядлый Кликоман</div>
+                      <div class="achievment__desc">Достигните 5000 кликов</div>
+                    </div>
+                    <div class="achievment__mark"><img src="images/empty.png" class="achievment__mark-image" id="achievment__mark-3"></div>
+                  </div>
+                </div>
+                <div class="achievment">
+                  <div class="achievment__container">
+                    <div class="achievment__image"><img src="images/coin2.png" class="achievment__image-image"></div>
+                    <div class="achievment__text">
+                      <div class="achievment__header">Миллионер</div>
+                      <div class="achievment__desc">Заработайте 1M монет</div>
+                    </div>
+                    <div class="achievment__mark"><img src="images/empty.png" class="achievment__mark-image" id="achievment__mark-4"></div>
+                  </div>
+                </div>
+                <div class="achievment">
+                  <div class="achievment__container">
+                    <div class="achievment__image"><img src="images/coin2.png" class="achievment__image-image"></div>
+                    <div class="achievment__text">
+                      <div class="achievment__header">Миллиардер</div>
+                      <div class="achievment__desc">Заработайте 1B монет</div>
+                    </div>
+                    <div class="achievment__mark"><img src="images/empty.png" class="achievment__mark-image" id="achievment__mark-5"></div>
+                  </div>
+                </div>
+                <div class="achievment">
+                  <div class="achievment__container">
+                    <div class="achievment__image"><img src="images/coin2.png" class="achievment__image-image"></div>
+                    <div class="achievment__text">
+                      <div class="achievment__header">Недалеко от Илон Маска</div>
+                      <div class="achievment__desc">Заработайте 100B монет</div>
+                    </div>
+                    <div class="achievment__mark"><img src="images/empty.png" class="achievment__mark-image" id="achievment__mark-6"></div>
+                  </div>
+                </div>
+                <div class="achievment">
+                  <div class="achievment__container">
+                    <div class="achievment__image"><img src="images/upgrade.png" class="achievment__image-image"></div>
+                    <div class="achievment__text">
+                      <div class="achievment__header">Шопоголик</div>
+                      <div class="achievment__desc">Купите 250 улучшений</div>
+                    </div>
+                    <div class="achievment__mark"><img src="images/empty.png" class="achievment__mark-image" id="achievment__mark-7"></div>
+                  </div>
+                </div>
+                <div class="achievment">
+                  <div class="achievment__container">
+                    <div class="achievment__image"><img src="images/cat.png" class="achievment__image-image"></div>
+                    <div class="achievment__text">
+                      <div class="achievment__header">Кошатница</div>
+                      <div class="achievment__desc">Купить 50 котов</div>
+                    </div>
+                    <div class="achievment__mark"><img src="images/empty.png" class="achievment__mark-image" id="achievment__mark-8"></div>
+                  </div>
+                </div>
+                <div class="achievment">
+                  <div class="achievment__container">
+                    <div class="achievment__image"><img src="images/crown.png" class="achievment__image-image"></div>
+                    <div class="achievment__text">
+                      <div class="achievment__header">Королева Кликов</div>
+                      <div class="achievment__desc">Купите улучшение "Королева Кликов"</div>
+                    </div>
+                    <div class="achievment__mark"><img src="images/empty.png" class="achievment__mark-image" id="achievment__mark-9"></div>
+                  </div>
+                </div>
+                <div class="achievment achievment__last">
+                  <div class="achievment__container">
+                    <div class="achievment__image"><img src="images/cake.png" class="achievment__image-image"></div>
+                    <div class="achievment__text">
+                      <div class="achievment__header">Это Ложь</div>
+                      <div class="achievment__desc">Пройти игру</div>
+                    </div>
+                    <div class="achievment__mark"><img src="images/empty.png" class="achievment__mark-image" id="achievment__mark-10"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="achievment__popup-close">
+              <button type="button" name="button" class="achievment__popup-close-button" id="achievment__popup-close-button">x</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="ending__popup-attention" id="ending__popup-attention">
+          <div class="ending__popup-background"></div>
+          <div class="ending__popup-body">
+            <div class="ending__popup-container">
+              <h1 class="ending__popup-header">Внимание!</h1>
+              <div class="ending__popup-desc">Вы не сможете вернуться, если закончите игру</div>
+              <div class="ending__button-container">
+                <div class="ending__button-confirm">
+                  <button type="button" name="button" class="ending__button-confirm-button" id="ending__popup-confirm-button">Завершить</button>
+                </div>
+                <div class="ending__popup-close">
+                  <button type="button" name="button" class="ending__popup-close-button" id="ending__popup-close-button">Отмена</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="end__popup" id="end__popup">
+          <div class="end__popup-background"></div>
+          <div class="end__popup-body">
+            <div class="end__popup-container">
+              <h1 class="end__popup-header">Спасибо за игру!</h1>
+              <div class="end__popup-text">
+                <p class="end__popup-paragraph">Привет!</p>
+                <p class="end__popup-paragraph">Спасибо за игру в этот мини-кликер</p>
+                <p class="end__popup-paragraph">Надеюсь он тебе понравился и подарил xорошее настроение</p>
+                <p class="end__popup-paragraph">А так же надеюсь что день рождения у тебя прошел отлично</p>
+                <p class="end__popup-paragraph"></p>
+              </div>
+              <div class="restart__button-container">
+                <a href="index.html" class="restart__button">Начать сначала</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src = "JS/popup.js"> </script>
+    <script src = "JS/base.js"> </script>
+    <script src = "JS/shop.js"> </script>
+
+
+  </body>
+</html>
